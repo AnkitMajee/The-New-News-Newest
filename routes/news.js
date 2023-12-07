@@ -10,7 +10,7 @@ newsr.get('/',async(req,res)=>{
     try {
         var url = 'http://newsapi.org/v2/top-headlines?' +
           'country=in&' +
-          'apiKey=36f3e29b704f41339af8439dc1228334';
+          'apiKey=d23f0f2ae374469386ca2f56450a6575';
 
         const news_get =await axios.get(url)
         res.render('news',{articles:news_get.data.articles})
@@ -29,7 +29,7 @@ newsr.post('/search',async(req,res)=>{
 
 
     try {
-        var url = `http://newsapi.org/v2/everything?q=${search}&apiKey=36f3e29b704f41339af8439dc1228334`
+        var url = `http://newsapi.org/v2/everything?q=${search}&apiKey=d23f0f2ae374469386ca2f56450a6575`
 
         const news_get =await axios.get(url)
         res.render('news',{articles:news_get.data.articles})
@@ -49,7 +49,7 @@ newsr.post('/search',async(req,res)=>{
 newsr.get('/news/:category',async(req,res)=>{
     var category = req.params.category;
     try {
-        var url = 'http://newsapi.org/v2/top-headlines?country=in&category=' + category + '&apiKey=36f3e29b704f41339af8439dc1228334';
+        var url = 'http://newsapi.org/v2/top-headlines?country=in&category=' + category + '&apiKey=d23f0f2ae374469386ca2f56450a6575';
 
         const news_get =await axios.get(url)
         res.render('category',{articles:news_get.data.articles})
