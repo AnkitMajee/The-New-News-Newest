@@ -12,3 +12,6 @@ $ npm start
 $ node app.js
 </code></pre></div>
 
+![image](https://github.com/AnkitMajee/The-New-News-Newest/assets/76817118/f3581877-74f5-4e9a-8e1d-5b7c64861d02)
+
+
